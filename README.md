@@ -19,17 +19,13 @@
 
     * **tmap.getRandomPointInArea([VEC3],[RADIUS IN METERS])**
     Returns a vec2 position or False if no safe point was found
-    
+     ```
     local randPos = tmap.getRandomPointInArea(pos,2260) 
-    
+     
     if randPos ~= nil and randPos ~= false then
-    
-      trigger.action.markToAll(_lineId, "", { x = randPos.x, y = 0, z = randPos.y})
-    
+     trigger.action.markToAll(_lineId, "", { x = randPos.x, y = 0, z = randPos.y})
     else    
-      
-      trigger.action.outText( "Error" , 10 )
-    
+     trigger.action.outText( "Error" , 10 )
     end
-    
+    ```
 
